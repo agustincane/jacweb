@@ -1,0 +1,36 @@
+/* Contacto */
+
+.contacto {
+    background-color: #FAEDF0;
+    color: #EC255A;
+    background-image: url(../img/fondo-contacto.png);
+    h2 {
+        color: #161853;
+    }
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+        label, input, textarea {
+            padding: .5rem;
+            color: #161853;
+        }
+        input, textarea {
+            background-color: rgba(250, 237, 240, .75);
+            border: solid .5px #292C6D;
+        }
+        .contacto__btn {
+            background-color: #161853;
+            color: #FAEDF0;
+            border: none;
+            font-size: 1rem;
+            font-weight: 700;
+            padding: .75rem;
+            margin-top: 1rem;
+            transition: all ease .25s;
+            text-transform: uppercase;
+        }
+        .contacto__btn:hover {
+            background-color: #EC255A;
+        }
+    }
+}

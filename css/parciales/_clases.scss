@@ -1,0 +1,43 @@
+/* Clases */
+
+.servicios, .mas, .nosotros, .contacto, .footer {
+    padding: 4rem 1rem;
+}
+
+.fucsia {
+    color: #EC255A;
+}
+
+.linea-fucsia {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.linea-fucsia::after {
+    content:'';
+    position: absolute;
+    background-color: #EC255A;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 6px;
+    z-index: -1;
+}
+
+.linea-azul {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.linea-azul::after {
+    content:'';
+    position: absolute;
+    background-color: #292C6D;
+    height: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 6px;
+    z-index: -1;
+}

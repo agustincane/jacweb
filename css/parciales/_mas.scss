@@ -1,0 +1,23 @@
+/* Bloque Ver Más */
+
+.mas {
+    background-color: #EC255A;
+    .mas__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            color: #FAEDF0;
+        }
+        a {
+            color: #FAEDF0;
+            border: solid 2px #FAEDF0;
+            padding: .75rem 2rem;
+            transition: all ease .25s;
+        }
+        a:hover {
+            background-color: #292C6D;
+            border: #292C6D;
+        }
+    }
+}

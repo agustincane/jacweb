@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <meta name="description" content="Diseño y Desarrollo Web">
+    <meta name="keywords" content="WEB, DISEÑO, DISENO, DESARROLLO, SEO, RESPONSIVE, GRÁFICO, JAC, CRECIMIENTO">
+
+    <!-- Open graph -->    
+    <meta property="og:title" content="JAC Diseño y Web">
+    <meta property="og:site_name" content="JAC Diseño y Web">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Diseño y Desarrollo de Sitios Web Responsive personalizados y con Optimización SEO.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jacdiseno.com/images/jac-logo-rojo.svg">
+    <meta property="og:image:width" content="200px">
+    <title>JAC Diseño y Web</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Link de Estilos -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- Siempre poner link de estilos al final (porque se aplican en cascada) -->
+</head>
+<body>
+    
+    <!-- Inicio / Header -->
+
+    <header class="header header--front">
+        <div class="container header__leng">
+            <a href="">ES</a>
+            <span>/</span>
+            <a href="">EN</a>
+        </div>
+        <div class="container header__content">
+            <a class="header__content_logo" href="index.html"><img src="img/jacweb-logo.svg" alt="Logo JAC"></a>
+            <h1 class="header__content__title">Contacto</h1>
+        </div>
+        <nav class="header__navbar">  
+            <ul class="container header__list">
+                <li class="header__item"><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li class="header__item"><a href="servicios.html">Servicios</a></li>
+                <li class="header__item"><a href="contacto.html">Contacto</a></li>
+            </ul>        
+        </nav>
+    </header>
+   
+    <!-- Bloque Contacto -->
+    
+    <section class="contacto">
+        <div class="contacto__content container">
+            <h2 class="linea-fucsia">Contactanos</h2>
+            <form class="contacto__form" action="">    
+                    <label for="nombre_apellido">Nombre Completo</label>
+                    <input type="text" name="nombre_apellido">
+                    <!-- atributo for de etiqueta label debe ser igual al name o id -->
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" name="correo">
+                    <label for="mensaje">Realizá tu consulta</label>
+                    <textarea name="mensaje" id="mensaje" cols="35" rows="10"></textarea>
+                    <input class="contacto__btn" type="submit" value="Enviar Formulario"/>                    
+            </form>
+        </div>    
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer__content container">
+            <img src="img/logo.png" alt="logo footer">
+        </div>
+    </footer>
+
+    <!-- SCRIPTS: van por debajo del DOM (debajo de los elementos del body) cuando interfieren en su funcionamiento -->   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* Servicios - ¿Qué Ofrecemos? */
+
+.servicios {
+    background-color: #FAEDF0;
+    .servicios__content {
+        color: #161853;
+        margin-bottom: 3rem;
+        .servicios__texto h4{
+            font-size: 1.2rem;
+            margin-bottom: .25rem;
+        }
+        .servicios__icon {
+            display: flex;
+            justify-content: center;
+            .icono-ejemplo {
+                width: 8rem;
+            }
+        }
+    }
+}
