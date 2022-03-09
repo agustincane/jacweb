@@ -4,11 +4,21 @@
     background-color: #161853;
     .footer__content {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     img {
         width: 200px;
     }
+    a {
+        color: #ffffff;
+        margin-top: 1.4rem;
+        transition: all ease .25s;
+    }
+    a:hover {
+        color: #EC255A;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {

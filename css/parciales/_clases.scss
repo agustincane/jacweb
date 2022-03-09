@@ -1,6 +1,6 @@
 /* Clases */
 
-.servicios, .mas, .nosotros, .contacto, .footer {
+.servicios, .mas, .nosotros, .contacto, .privacidad, .footer {
     padding: 4rem 1rem;
 }
 
@@ -21,8 +21,11 @@
     height: 10px;
     width: 100%;
     left: 0;
-    bottom: 6px;
+    bottom: 4px;
     z-index: -1;
+    @include desktop {
+        height: 8px;
+    }
 }
 
 .linea-azul {
@@ -38,6 +41,9 @@
     height: 10px;
     width: 100%;
     left: 0;
-    bottom: 6px;
+    bottom: 4px;
     z-index: -1;
+    @include desktop {
+        height: 8px;
+    }
 }

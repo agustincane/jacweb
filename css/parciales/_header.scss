@@ -1,42 +1,43 @@
 /* Header - Inicio */
 
 .header {
-    height: 90vh;
+    height: 80vh;
     background-image: url(../img/fondo-web.png);
     background-position: top center;
     background-color: #292C6D;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    .header__leng {
-        display: flex;
-        justify-content: end;
-        width: 75%;
-        a, span {
-            color: #EC255A;
-            margin: .75rem .15rem;
-            transition: all ease .25s;
-        }
-        a:hover {
-            color: #FAEDF0;
-        }
-    }
+    justify-content: center;
     .header__content {
         text-align: center;
-        margin-bottom: 2rem;
         .header__logo {
-            width: 12rem;
             transition: all ease .25s;
+            img {
+                width: 10rem;
+                @include tablet {
+                    width: 8.4rem;
+                }
+            }
         }
         .header__logo:hover {
             transform: translateY(-.15rem);
+        }
+        .header__title {
+            font-size: 3.2rem;
+            @include tablet {
+                font-size: 2.4rem;
+            }
         }
         .header__subtitle {
             font-size: 1.4rem;
             color: #EC255A;
             font-weight: 400;
             margin-bottom: 2.5rem;
+            line-height: 1.5;
+            @include tablet {
+                font-size: 1.2rem;
+            }
         }
         .header__button {
             color: #EC255A;
@@ -49,34 +50,35 @@
             color: #FAEDF0;
         }
     }
-    .header__navbar {
-        background-color: #EC255A;
+    
+}
+
+.navbar {
+    background-color: #EC255A;
+    display: flex;
+    justify-content: center;
+    .navbar__list {
+        padding: .25rem;
+        margin: 0;
         display: flex;
-        justify-content: center;
-        .header__list {
-            padding: .75rem;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
+        justify-content: space-around;
+        @include tablet {
+            flex-direction: column;
+        }
+        .navbar__item {
+            list-style: none;
             @include tablet {
-                flex-direction: column;
+                text-align: center;
+                padding: .25rem;
             }
-            .header__item {
-                list-style: none;
-                @include tablet {
-                    text-align: center;
-                    padding: .25rem;
-                }
-                a {
-                    color: #FAEDF0;
-                    padding: .5rem 1rem;
-                    transition: all ease .25s;
-                    margin: 0 1rem;
-                }
-                a:hover {
-                    color: #292C6D;
-                    font-weight: 700;    
-                }
+            a {
+                color: #FAEDF0;
+                transition: all ease .25s;
+                margin: 0 1rem;
+            }
+            a:hover {
+                color: #292C6D;
+                font-weight: 700;    
             }
         }
     }
